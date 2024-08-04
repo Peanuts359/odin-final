@@ -1,0 +1,46 @@
+.Search {
+    min-height: 52px;
+    display: flex;
+    align-items: center;
+    padding: 0 6px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  
+  .Search .media {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .Search .text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+    overflow: hidden;
+  }
+  
+  .Search .full-name {
+    font-family: "Arial-Medium";
+    color: black;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  
+  .Search .full-name .match {
+    font-family: "Arial-Light";
+  }
+  
+  .Search .relationship {
+    color: gray;
+    font-size: 12px;
+  }
+  
+  @media (hover: hover) {
+    .Search:hover {
+      background-color: rgb(227, 228, 229);
+    }
+  }

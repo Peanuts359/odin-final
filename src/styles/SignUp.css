@@ -1,0 +1,161 @@
+.SignUp {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    min-width: 310px;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+  
+  .SignUp form {
+    width: 432px;
+    max-height: 100%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: overlay;
+  }
+  
+  .SignUp form > * {
+    transition: filter 0.5s;
+  }
+  
+  .SignUp form.disabled > * {
+    filter: grayscale(0.5) opacity(0.5);
+    pointer-events: none;
+  }
+  
+  .SignUp form .close-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #606770;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    padding: 0;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+  }
+  
+  .SignUp form .title-bar {
+    padding: 10px 16px 14px 16px;
+    border-bottom: 1px solid lightgray;
+    align-self: normal;
+  }
+  
+  .SignUp form .title {
+    font-family: "Arial-Medium";
+    font-size: 32px;
+  }
+  
+  .SignUp form .subtitle {
+    margin-top: 2px;
+    color: #606770;
+    font-family: "Arial-Regular";
+  }
+  
+  .SignUp .content {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 14px 16px 26px 16px;
+  }
+  
+  .SignUp .DotsThrobber {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .SignUp form input {
+    box-sizing: border-box;
+    padding: 0 11px;
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    font-family: "Arial-Regular";
+    font-size: 16px;
+    height: 38px;
+    border-radius: 5px;
+    background-color: rgb(245, 246, 247);
+    margin-bottom: 10px;
+  }
+  
+  .SignUp form .full-name-inputs {
+    display: flex;
+    column-gap: 10px;
+  }
+  
+  .SignUp form .full-name-inputs input {
+    width: 0;
+    flex: 1;
+  }
+  
+  .SignUp form input::placeholder {
+    color: rgb(156, 156, 156);
+  }
+  
+  .SignUp form input:focus {
+    outline: none;
+    border-color: rgb(24, 119, 242);
+  }
+  
+  .SignUp form .sign-up-btn {
+    width: 194px;
+    height: 36px;
+    padding: none;
+    background-color: hsl(110, 62.7%, 44.1%);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-family: "Arial-Medium";
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 8px;
+    align-self: center;
+    transition: background-color 0.2s, transform 0.2s;
+  }
+  
+  .SignUp .sign-up-message {
+    color: red;
+    min-height: 17px;
+  }
+  
+  @media (hover: hover) {
+    .SignUp form .close-btn:hover {
+      background-color: rgb(242, 242, 242);
+    }
+  
+    .SignUp form .sign-up-btn:hover {
+      background-color: hsl(110, 62.7%, 41.9%);
+    }
+  }
+  
+  .SignUp form .close-btn:active {
+    background-color: rgb(229, 229, 229);
+  }
+  
+  .SignUp form .sign-up-btn:active {
+    background-color: hsl(110, 62.7%, 39.7%);
+    transform: scale(0.97);
+  }

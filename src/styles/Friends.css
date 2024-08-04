@@ -1,0 +1,42 @@
+.Friends {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 32px;
+  }
+  
+  .Friends .title {
+    font-size: 20px;
+    font-family: "Arial-Medium";
+    margin-bottom: 16px;
+    grid-column: 1 / -1;
+  }
+  
+  .Friends .friend-requests,
+  .Friends .friends {
+    width: min(100%, 1042px);
+    margin-top: 34px;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .Friends .friends {
+    padding-bottom: 88px;
+  }
+  
+  .Friends .divider {
+    grid-column: 1 / -1;
+    height: 1px;
+    background-color: lightgray;
+    width: min(calc(100% + 40px), 1082px, 100vw);
+    margin-left: -20px;
+    margin-top: 24px;
+  }
+  
+  .Friends .no-friends-msg,
+  .Friends .no-reqs-msg {
+    grid-column: 1 / -1;
+  }
